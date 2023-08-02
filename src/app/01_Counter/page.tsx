@@ -1,5 +1,7 @@
 'use client'
 
+import Button from '@/components/atoms/Button'
+import Title from '@/components/atoms/Title'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -8,24 +10,17 @@ const Counter = () => {
 
   return (
     <>
-      <h1 className='text-4xl font-bold'>Counter</h1>
+      <Title>Counter</Title>
       <div className='flex flex-col justify-center items-center text-2xl'>
-        <p>{count}</p>
+        <p>Count: {count}</p>
         <div className='w-full flex justify-evenly'>
-          <button
-            className='border rounded-lg border-black px-6 py-3 bg-blue-300' 
-            onClick={() => setCount(0)}>reset
-          </button>
-          <button
-            className='border rounded-lg border-black px-6 py-3 bg-blue-300' 
-            onClick={() => setCount(count+1)}>+1
-          </button>
+          <Button onClick={() => setCount(0)}>reset</Button>
+          <Button onClick={() => setCount(count+1)}>+1</Button>
         </div>
       </div>
-      <button 
-        className='border rounded-lg border-black px-6 py-3 bg-blue-300'>
-        <Link href={"./01_Counter/ex"}>確認課題</Link>
-      </button>
+      <Button>
+        <Link className='hover:underline' href={"./01_Counter/ex"}>確認課題</Link>
+      </Button>
     </>
   )
 }

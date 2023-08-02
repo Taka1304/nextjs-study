@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithoutRef, FC, PropsWithChildren } from 'react'
+import React, { ComponentPropsWithoutRef, FC } from 'react'
 
 type Props = Omit<ComponentPropsWithoutRef<'button'>, 'className'>
 

@@ -1,9 +1,12 @@
+import Title from '@/components/atoms/Title'
 import React from 'react'
 
 const Ex = () => {
+
+
   return (
     <>
-      <h1 className='text-4xl font-bold'>確認課題</h1>
+      <Title>確認課題</Title>
       <p></p>
     </>
   )
