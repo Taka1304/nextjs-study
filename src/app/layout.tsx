@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Layout from '@/components/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,9 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="max-w-screen w-full min-h-screen h-full bg-slate-900 text-white">
           <Header />
-          <main className='px-8 py-6'>
+          <Layout>
             {children}
-          </main>
+          </Layout>
         </div>
       </body>
     </html>

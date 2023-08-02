@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Title>Next.js 勉強資料</Title>
 
       <ul>
@@ -16,6 +16,6 @@ export default function Home() {
         <li><Link className='hover:underline' href={"./06"}>第6回　カウントアップボタンをつくる</Link></li>
         <li><Link className='hover:underline' href={"./07"}>第7回　カウントアップボタンをつくる</Link></li>
       </ul>
-    </div>
+    </>
   )
 }
